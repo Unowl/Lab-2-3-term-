@@ -126,7 +126,6 @@ public:
     }
     void Copy(Backpack* l_Backpack)
     {
-       // cout << 'f' <<endl;
         int l = CurrentItems.GetLength();
         for(int i =0; i<l;i++)
         {
@@ -186,7 +185,6 @@ class tree_elem_N
      }
      tree_elem_N(Backpack* p_B, Item I, int p_depth)
      {
-       // cout << 'e' <<endl;
         B.Copy(p_B);
         B.AddItem(I);
         depth = p_depth+1;
