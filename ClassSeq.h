@@ -236,7 +236,6 @@ void CLinkedList<T> ::InsertAt(T data, int index) {
     Node<T>* previous;
     Node<T>* new_elem;
     Node<T>* tmp;
-  // std::cout << "\nInsertAt data = " << data << " index = " << index << "\n";
     if(index == 0 || index == Size)
     {
          if(index == 0)   Prepend(data);
@@ -272,7 +271,6 @@ template<class T>
 void CLinkedList<T>::RemoveAt(int index) {
     if(index < 0 || index >= Size)
         throw "removeAt Message : Index Out Of Range\n";
-  //  std::cout << "\nremoveAt index = " << index << "\n";
     if(index == 0)
         pop_front();
     else{
